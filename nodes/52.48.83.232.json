@@ -1,8 +1,14 @@
 {
   "run_list": [
+    "selinux:default",
     "mysql_wrapper::default"
   ],
   "automatic": {
     "ipaddress": "52.48.83.232"
-  }
+  },
+  "default_attributes": {
+    "selinux": {
+     "state": "permissive"
+   }
+ }
 }
