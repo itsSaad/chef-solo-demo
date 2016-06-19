@@ -7,6 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
+node.default['selinux']['state'] = 'permissive'
+
+include_recipe 'selinux::default'
 mysql_service 'default' do
   port '3306'
   version '5.7'

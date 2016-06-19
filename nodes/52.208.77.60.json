@@ -1,0 +1,8 @@
+{
+  "run_list": [
+    "mysql_wrapper::default"
+  ],
+  "automatic": {
+    "ipaddress": "52.208.77.60"
+  }
+}
