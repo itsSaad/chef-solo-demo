@@ -28,6 +28,5 @@ if ! test -f "$chef_binary"; then
     rbenv global 2.3.1
     rbenv rehash
     gem install --no-rdoc --no-ri chef
-fi
-
-# "$chef_binary" -c solo.rb -j solo.json
+fi &&
+"$chef_binary" -c solo.rb -j solo.json
